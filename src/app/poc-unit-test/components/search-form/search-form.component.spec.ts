@@ -30,7 +30,7 @@ describe('SearchFormComponent', () => {
   describe('Dado que um termo seja inserido no formulário', () => {
 
     it('ENTÃO deverá submeter o termo inserido', () => {
-      const preventDefault = jasmine.createSpy('submit preventDefault');
+      const preventDefault = jest.fn();
 
       let actualSearchTerm: string | undefined;
 

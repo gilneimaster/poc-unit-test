@@ -18,11 +18,9 @@ describe('FlickrSearchComponent', () => {
   let photoList: DebugElement;
 
   beforeEach(async () => {
-    fakeFlickrService = {
-      searchPublicPhotos: jasmine
-        .createSpy('searchPublicPhotos')
-        .and.returnValue(of(photos)),
-    };
+      fakeFlickrService = {
+        searchPublicPhotos: jest.fn().mockReturnValue(of(photos)),
+      };
 
     await TestBed.configureTestingModule({
       imports: [HttpClientTestingModule],
