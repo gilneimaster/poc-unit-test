@@ -1,0 +1,16 @@
+.container-app-module hr {
+width: 100%;
+}
+
+.container-app-module {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  padding: 5px;
+  background-color: #bd2cd7;
+  color: #eff;
+  justify-content: flex-start;
+  align-items: flex-start;
+  text-align: justify;
+}

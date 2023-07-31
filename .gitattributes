@@ -1,0 +1,75 @@
+# Java sources
+*.java              text diff=java
+*.gradle            text diff=java
+*.gradle.kts        text diff=java
+
+# TypeScript Sources
+*.ts                text
+*.ejs               text
+
+# Configs
+*.xml               text
+*.yml               text
+*.yaml              text
+*.json              text
+*.conf              text
+*.cnf               text
+*.conf              text
+*.config            text
+.editorconfig       text
+.env                text
+.gitattributes      text
+.gitconfig          text
+.htaccess           text
+*.lock              text -diff
+package.json        text eol=lf
+package-lock.json   text -diff
+browserslist        text
+Makefile            text
+makefile            text
+
+
+# These files are text and should be normalized (Convert crlf => lf)
+*.css               text diff=css
+*.df                text
+*.htm               text diff=html
+*.html              text diff=html
+*.js                text
+*.jsp               text
+*.jspf              text
+*.jspx              text
+*.properties        text
+*.tld               text
+*.tag               text
+*.tagx              text
+*.md                text
+*.txt               text
+Dockerfile          text
+
+# Archives
+*.7z                binary
+*.gz                binary
+*.jar               binary
+*.rar               binary
+*.tar               binary
+*.zip               binary
+
+# Fonts
+*.ttf               binary
+*.eot               binary
+*.otf               binary
+*.woff              binary
+*.woff2             binary
+
+# These files are binary and should be left untouched
+# (binary is a macro for -text -diff)
+*.class             binary
+*.dll               binary
+*.ear               binary
+*.jar               binary
+*.so                binary
+*.war               binary
+*.jks               binary 
+
+# Ignore files (like .npmignore or .gitignore)
+*.*ignore           text
