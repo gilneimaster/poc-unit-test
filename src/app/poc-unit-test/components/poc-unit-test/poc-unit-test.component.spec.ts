@@ -3,7 +3,7 @@ import { RouterTestingModule } from "@angular/router/testing";
 
 import {PocUnitTestComponent} from "./poc-unit-test.component";
 import { PocUnitTestModule } from "../../poc-unit-test.module";
-import {CoreLibAngularMfeCommonsModule} from "@frota/core-lib-angular-mfe-commons";
+
 describe('PocUnitTestComponent', () => {
 
   let component: PocUnitTestComponent;
@@ -13,8 +13,7 @@ describe('PocUnitTestComponent', () => {
     await TestBed.configureTestingModule({
       imports: [
         RouterTestingModule,
-        PocUnitTestModule,
-        CoreLibAngularMfeCommonsModule
+        PocUnitTestModule
       ],
       declarations: [ PocUnitTestComponent ],
       providers: []
