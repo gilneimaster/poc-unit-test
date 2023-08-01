@@ -1,3 +1,4 @@
+import 'zone.js/testing';
 import { HttpErrorResponse } from '@angular/common/http';
 import {
   HttpClientTestingModule,
