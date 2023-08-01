@@ -7,7 +7,7 @@
     "build": "ng build",
     "postinstall": "ngcc",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test --watch=true --code-coverage --browsers=ChromeHeadlessNoSandbox",
+    "test": "ng test --watch=false --code-coverage --browsers=ChromeHeadlessNoSandbox",
     "sonar": "sonar-scanner -Dsonar.projectVersion=$(jq -r .version package.json)",
     "sonar:dev": "sonar-scanner -Dsonar.projectVersion=$(jq -r .version package.json) -Dsonar.login=\"admin\" -Dsonar.password=\"dev\" ",
     "lint": "ng lint"
